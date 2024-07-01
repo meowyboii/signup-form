@@ -9,7 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="styles.css" />
     <title>Signup Form</title>
   </head>
@@ -19,9 +18,13 @@
         <img src="background.jpg" alt="A vase that has a tree in it" />
         <div id="bg-image-content">
           Photo by
-          <a href="http://unsplash.com/@virupro10">notorious v1ruS</a> on
+          <a href="http://unsplash.com/@virupro10" target="_blank"
+            >notorious v1ruS</a
+          >
+          on
           <a
             href="http://unsplash.com/photos/a-vase-that-has-a-tree-in-it-VLDJ725jdLE"
+            target="_blank"
             >Unsplash</a
           >
         </div>
@@ -47,6 +50,7 @@
                 name="email"
                 id="email"
                 placeholder="sample@gmail.com"
+                required
               />
               <label for="email">email</label>
               <input
@@ -54,6 +58,7 @@
                 name="first-name"
                 id="first-name"
                 placeholder="Juan"
+                required
               />
               <label for="first-name">first name</label>
             </div>
@@ -62,6 +67,7 @@
                 type="password"
                 name="confirm-password-confirm"
                 id="confirm-password"
+                required
               />
               <label for="confirm-password">confirm password</label>
 
@@ -79,12 +85,13 @@
                 name="last-name"
                 id="last-name"
                 placeholder="Dela Cruz"
+                required
               />
               <label for="last-name">last name</label>
             </div>
           </div>
+          <button type="submit">sign up</button>
         </form>
-        <button>sign up</button>
         <p>Already have an account? Log in</p>
       </div>
     </div>

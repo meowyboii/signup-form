@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("Norse-Bold.otf") format("otf");
+}
 :root {
   /* Color Palette */
   --primary-color: #885348;
@@ -29,6 +33,7 @@ body {
 p {
   color: var(--text-color);
   font-size: var(--font-size-medium);
+  font-weight: 500;
 }
 a {
   color: rgb(255, 230, 210);
@@ -85,7 +90,7 @@ button:hover {
 
 #container {
   display: flex;
-  height: 60vh;
+  height: 70%;
   width: auto;
   margin: 15vh 30vh;
   background-color: var(--dirty-white);
@@ -101,10 +106,19 @@ button:hover {
   width: 100%;
   object-fit: cover;
 }
+
+#logo-text {
+  font-family: "Norse Bold", sans-serif;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #bg-image-content {
   position: absolute;
-  top: 94%;
-  left: 22%;
+  top: 97%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: var(--font-size-small);
   color: #47241d;
@@ -118,12 +132,9 @@ button:hover {
   padding: 80px;
   justify-content: center;
 }
-#title {
-  font-weight: 500;
-}
 #title p:first-child {
   font-weight: 600;
-  font-size: larger;
+  font-size: var(--font-size-large);
 }
 #form-section {
   display: flex;
