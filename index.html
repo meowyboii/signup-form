@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
     <title>Signup Form</title>
   </head>
@@ -27,35 +34,35 @@
           <p>You <em>know</em> you want to.</p>
         </div>
         <form action="" method="post">
+          <p>Let's do this!</p>
           <div id="form-section">
-            <div>
-              <p>Let's do this!</p>
-              <label for="first-name">first name</label>
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                placeholder="Juan"
-              />
-              <label for="email">email</label>
+            <div class="input-group">
+              <input type="password" name="password" id="password" />
+              <label for="password">password</label>
+
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="sample@gmail.com"
               />
-              <label for="password">password</label>
-              <input type="password" name="password" id="password" />
-            </div>
-            <div style="margin-top: 50px">
-              <label for="last-name">last name</label>
+              <label for="email">email</label>
               <input
                 type="text"
-                name="last-name"
-                id="last-name"
-                placeholder="Dela Cruz"
+                name="first-name"
+                id="first-name"
+                placeholder="Juan"
               />
-              <label for="phone">phone number</label>
+              <label for="first-name">first name</label>
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                name="confirm-password-confirm"
+                id="confirm-password"
+              />
+              <label for="confirm-password">confirm password</label>
+
               <input
                 type="tel"
                 name="phone"
@@ -64,12 +71,14 @@
                 pattern="^\+63\d{10}$"
                 required
               />
-              <label for="confirm-password">confirm password</label>
+              <label for="phone">phone number</label>
               <input
-                type="password"
-                name="confirm-password-confirm"
-                id="confirm-password"
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Dela Cruz"
               />
+              <label for="last-name">last name</label>
             </div>
           </div>
         </form>
