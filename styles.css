@@ -1,0 +1,77 @@
+:root {
+  /* Color Palette */
+  --primary-color: #885348;
+  --secondary-color: #dbb295;
+  --text-color: #333;
+  --border-danger: #c94a41;
+
+  /* Font Sizes */
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.5rem;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+}
+
+body {
+  background-color: var(--secondary-color);
+  margin: 0;
+}
+p {
+  color: var(--text-color);
+  font-size: var(--font-size-medium);
+}
+
+label {
+  color: var(--text-color);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+input {
+  width: 90%;
+  margin-top: 5px;
+  margin-bottom: var(--spacing-medium);
+}
+button {
+  width: 20%;
+}
+
+#container {
+  display: flex;
+  height: 55vh;
+  width: auto;
+  margin: 15vh 30vh;
+  background-color: white;
+}
+#bg-image {
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+#bg-image img {
+  height: 100%;
+  width: auto;
+}
+#bg-image-content a {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: var(--spacing-large);
+  justify-content: center;
+}
+#form-section {
+  display: flex;
+  gap: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+  margin-top: var(--spacing-large);
+}
